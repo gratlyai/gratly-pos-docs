@@ -1,0 +1,81 @@
+---
+title: "Set Up and Configure Your Gratly POS Restaurant Account"
+sidebarTitle: "Account Setup"
+description: "Configure your restaurant's profile, service settings, tax rates, and business hours in Gratly POS to match how your restaurant operates."
+---
+
+Before you take your first order, take a few minutes to configure your Gratly POS account. Getting your restaurant profile, service types, tax rates, and business hours right from the start ensures that receipts look professional, taxes calculate correctly, and your team works within a setup that matches how your restaurant actually runs.
+
+## Restaurant Profile
+
+Your restaurant profile controls the information that appears on customer receipts and throughout the Gratly POS interface. To update it, go to **Settings > Restaurant Profile**.
+
+| Field | Description |
+|---|---|
+| **Restaurant Name** | Appears at the top of every printed and digital receipt |
+| **Address & Phone Number** | Printed on receipts and used for delivery order confirmation |
+| **Logo** | PNG or JPG format; displayed on digital receipts sent by email or SMS |
+| **Cuisine Type** | Used for internal categorization and reporting filters |
+| **Time Zone** | Ensures order timestamps, reports, and shift closings reflect your local time |
+
+<Tip>
+Upload a high-resolution logo (at least 300×300 px) so it renders cleanly on digital receipts across all screen sizes.
+</Tip>
+
+## Service Types
+
+Gratly POS supports three service types. Enable only the ones that match how your restaurant operates — each one unlocks a dedicated workflow on the POS and KDS.
+
+Navigate to **Settings > Service Types** and toggle each service type on or off:
+
+- **Dine-In** — Activates the floor plan and table management features. Servers can open a table, assign guests, and send orders to the kitchen by table number.
+- **Takeout** — Creates a takeout queue on the POS and KDS. Each takeout order is assigned a name or order number for pickup coordination.
+- **Delivery** — Enables delivery order entry with a customer address field. You can optionally set a flat or percentage-based delivery fee that applies automatically to all delivery orders.
+
+<Note>
+You can enable multiple service types simultaneously. If your restaurant does both dine-in and takeout, enable both — staff will select the order type when creating each new order.
+</Note>
+
+## Tax Configuration
+
+Set up one or more tax rates to apply to your menu items. Gratly POS supports different rates for different service types and menu categories — useful if, for example, your local regulations tax alcohol at a different rate than food.
+
+<Steps>
+  <Step title="Open the Taxes settings">
+    Go to **Settings > Taxes**.
+  </Step>
+  <Step title="Add a new tax rate">
+    Tap **+ Add Tax Rate**.
+  </Step>
+  <Step title="Enter the tax details">
+    Enter a name (e.g., "Sales Tax") and the percentage rate (e.g., 8.5).
+  </Step>
+  <Step title="Choose where it applies">
+    Select whether this rate applies to **Dine-In**, **Takeout**, **Delivery**, or **All** order types.
+  </Step>
+  <Step title="Save">
+    Tap **Save**. The rate is now active and will be applied automatically to qualifying orders.
+  </Step>
+</Steps>
+
+You can create multiple tax rates and assign them to specific menu categories. For example, create a separate "Alcohol Tax" rate at a higher percentage and assign it only to your Beverages or Bar category. Items in that category will use the alcohol rate instead of the default sales tax.
+
+## Business Hours
+
+Set your restaurant's operating hours in **Settings > Business Hours**. Select each day of the week and define your open and close times. For days you're closed, leave the hours blank or toggle the day off.
+
+Once business hours are configured, the POS will display a warning if a staff member attempts to open a new order outside of the set hours. This helps prevent accidental orders during setup, cleaning, or closed periods without blocking staff from overriding when needed.
+
+<Tip>
+If your restaurant has a late-night service that crosses midnight (e.g., open until 2:00 AM), set the close time to the next calendar day using the 24-hour format.
+</Tip>
+
+## Notifications
+
+Configure automated alerts in **Settings > Notifications** to stay informed about your restaurant's activity without being at the terminal. Available notifications include:
+
+- **Daily Summary** — An email sent at the end of each business day with total sales, order count, and top-selling items.
+- **Low Cash Drawer Warning** — Alerts you when the cash drawer balance drops below a threshold you define, so you can refill before service is disrupted.
+- **Unusual Activity Flag** — Notifies you when an abnormal number of voids, comps, or discounts are applied in a short period — a useful signal for reviewing potential errors or misuse.
+
+Enter the email address(es) that should receive each alert type. You can add multiple recipients per notification type.

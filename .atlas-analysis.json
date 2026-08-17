@@ -1,13 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "Gratly POS",
+  "projectDescription": "Gratly is a restaurant point-of-sale system that streamlines order taking, table management, kitchen coordination, payments, and reporting for food and beverage businesses.",
   "theme": "almond",
-  "name": "Gratly POS",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -68,20 +66,25 @@
       }
     ]
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@gratly.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Open POS",
-      "href": "https://app.gratly.com"
-    }
-  },
-  "footer": {
-    "socials": {}
-  }
+  "keyFeatures": [
+    "Table layout management with real-time occupancy status",
+    "Order taking with modifiers and combo support",
+    "Kitchen Display System (KDS) for real-time ticket routing",
+    "Split and merge checks with flexible payment options",
+    "Menu management with categories, items, and pricing",
+    "Discounts, comps, and manager overrides",
+    "Sales and revenue reporting dashboard",
+    "Staff roles and permissions management",
+    "Receipt and KOT (Kitchen Order Ticket) printing",
+    "End-of-day closing and cash reconciliation"
+  ],
+  "publicApiSurface": [
+    "Menu categories and items management",
+    "Order creation and modification",
+    "Payment processing flows",
+    "Table assignment and status",
+    "Staff login and role-based access",
+    "Sales and shift reports",
+    "Printer and hardware configuration"
+  ]
 }

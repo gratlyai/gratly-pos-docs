@@ -1,0 +1,129 @@
+---
+title: "Hardware Setup Guide for Gratly POS Terminals"
+sidebarTitle: "Hardware Setup"
+description: "Connect and configure your Gratly POS terminal, receipt printer, kitchen ticket printer, and Kitchen Display System screen step by step."
+---
+
+Gratly POS runs on a connected ecosystem of devices: a POS terminal for taking orders, a receipt printer for customer-facing receipts, a kitchen ticket printer for paper KOTs, and a Kitchen Display System (KDS) screen so your kitchen team can see and manage orders in real time. This guide walks you through setting up each piece of hardware so everything is ready before your first service.
+
+---
+
+## Supported Hardware
+
+Gratly is compatible with the following devices:
+
+| Device | Supported Models |
+|---|---|
+| **POS Terminal** | iPad (10th gen or later), Android tablet (10"), Gratly Terminal (dedicated) |
+| **Receipt Printer** | Epson TM-T88 series, Star TSP143 |
+| **Kitchen Ticket Printer** | Epson TM-U220, Star SP742 |
+| **KDS Screen** | Any HDMI display, Gratly KDS tablet |
+
+---
+
+## Connecting Your POS Terminal
+
+<Steps>
+  <Step title="Download the Gratly POS App">
+    On your iPad or Android tablet, open the **App Store** or **Google Play Store** and search for **Gratly POS**. Tap **Install** and wait for the download to complete.
+  </Step>
+  <Step title="Sign In with Manager Credentials">
+    Open the Gratly POS app and enter the email and password for an Owner or Manager account. Only Manager-level access and above can complete the initial device setup.
+  </Step>
+  <Step title="Connect to Your Restaurant Profile">
+    After signing in, the app automatically detects and connects to your restaurant profile. Confirm the restaurant name displayed on screen is correct, then tap **Confirm & Continue** to reach the POS home screen.
+  </Step>
+</Steps>
+
+---
+
+## Setting Up a Receipt Printer
+
+<Steps>
+  <Step title="Connect the Printer to Your Wi-Fi Network">
+    Using the printer's control panel or the manufacturer's setup utility, connect the receipt printer to the **same Wi-Fi network** your POS terminal uses. Refer to your printer's manual if you need help locating the network settings menu.
+  </Step>
+  <Step title="Add the Printer in Gratly">
+    In the Gratly POS app, go to **Settings > Printers** and tap **Add Printer**. Gratly scans the local network and displays any compatible printers it finds.
+  </Step>
+  <Step title="Select Your Printer Model">
+    Tap your printer in the list and confirm the model (e.g., Epson TM-T88VI). Gratly loads the correct driver profile automatically.
+  </Step>
+  <Step title="Print a Test Receipt">
+    Tap **Print Test Receipt**. A test slip prints from the device. If it prints correctly, tap **Save** to finalize the configuration.
+  </Step>
+</Steps>
+
+---
+
+## Setting Up a Kitchen Ticket Printer
+
+<Steps>
+  <Step title="Connect the Printer to Your Wi-Fi Network">
+    Connect the kitchen ticket printer to the same Wi-Fi network as your POS terminal, following the same steps as the receipt printer above.
+  </Step>
+  <Step title="Add the Printer in Gratly">
+    Go to **Settings > Printers** and tap **Add Printer**. Select the kitchen printer from the discovered device list (e.g., Epson TM-U220).
+  </Step>
+  <Step title="Assign Menu Categories to This Printer">
+    Under the printer's settings, tap **Assigned Categories**. Select every menu category whose orders should print to this printer — for example, assign the "Bar" category to the bar printer and "Kitchen" categories to the pass printer. This ensures each ticket goes to the right station.
+  </Step>
+  <Step title="Print a Test Ticket">
+    Tap **Print Test KOT** to send a sample kitchen order ticket. Confirm the ticket prints at the correct station, then tap **Save**.
+  </Step>
+</Steps>
+
+---
+
+## Setting Up the Kitchen Display System (KDS)
+
+<Steps>
+  <Step title="Download the Gratly KDS App">
+    On your KDS tablet or HDMI-connected display device, install the **Gratly KDS** app from the App Store or Google Play Store.
+  </Step>
+  <Step title="Sign In to the KDS App">
+    Open the app and sign in using your Manager credentials. The KDS app uses the same account system as the POS terminal.
+  </Step>
+  <Step title="Assign the Device to a Kitchen Station">
+    When prompted, select a station name from the list (e.g., "Grill", "Expo", "Bar"). If the station doesn't exist yet, create it under **Settings > KDS Stations** from the POS terminal first.
+  </Step>
+  <Step title="Confirm Orders Are Flowing">
+    From the POS terminal, send a test order to the kitchen. The ticket should appear on the KDS screen within seconds. Tap **Done** on the KDS to mark it complete and confirm the two-way connection is working.
+  </Step>
+</Steps>
+
+---
+
+## Troubleshooting Hardware
+
+<AccordionGroup>
+  <Accordion title="Printer not found on the network">
+    If Gratly can't discover your printer during setup, check the following:
+
+    - Confirm the printer is connected to the **exact same Wi-Fi network** (and same band — 2.4 GHz vs. 5 GHz) as your POS terminal.
+    - Restart the printer by powering it off, waiting 10 seconds, and powering it back on.
+    - Disable any VPN or network isolation settings on your router that may block device-to-device communication.
+    - Try assigning a static IP to the printer via your router's DHCP settings, then add the printer manually using **Settings > Printers > Add Manually**.
+  </Accordion>
+
+  <Accordion title="KDS not receiving orders">
+    If orders sent from the POS terminal are not appearing on the KDS screen:
+
+    - Verify the KDS device is signed in and the app is running in the foreground (not minimized).
+    - Go to **Settings > KDS Stations** on the POS terminal and confirm the station is active and correctly assigned to the KDS device.
+    - Check that the menu categories for those orders are routed to a KDS station under **Settings > Categories > Routing**.
+    - Restart the Gratly KDS app and re-send a test order.
+  </Accordion>
+
+  <Accordion title="Terminal showing as offline">
+    If your POS terminal displays an offline warning:
+
+    - Check that the tablet has an active internet connection — open a browser and load any website to confirm.
+    - Toggle Wi-Fi off and back on in the device's system settings, then reopen Gratly POS.
+    - If your venue's internet is fully down, switch to **Offline Mode**: tap the offline banner and select **Continue Offline**. Orders are saved locally on the device and will sync automatically once connectivity is restored.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  Gratly supports full offline mode — if your internet connection drops during service, the POS terminal continues to accept orders and process payments locally. All data is saved on the device and syncs automatically to the cloud as soon as connectivity is restored. No orders or payments are lost.
+</Note>

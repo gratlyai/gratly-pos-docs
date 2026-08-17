@@ -1,0 +1,87 @@
+---
+title: "Create Staff Accounts and Assign Roles in Gratly POS"
+sidebarTitle: "Staff & Roles"
+description: "Add team members to Gratly POS, assign them roles with the right permissions, and manage PIN-based logins for servers, cashiers, and managers."
+---
+
+Every person who uses Gratly POS needs their own staff account. Accounts are tied to a role that controls what each team member can see and do on the terminal — so servers can take orders without accessing financial reports, and managers can process voids without touching ownership-level settings. Setting up accounts before your first shift keeps your operation secure and your reporting accurate.
+
+## Staff Roles Overview
+
+Gratly POS includes four built-in roles. Each role comes with a fixed set of permissions designed to match the responsibilities of that position.
+
+| Role | What they can do |
+|---|---|
+| **Owner** | Full access to all settings, reports, financial data, and staff management. Intended for the restaurant owner or primary account holder. |
+| **Manager** | Can process voids, comps, and discounts; access all reports; edit the menu; and add or deactivate staff members. Cannot modify ownership-level account settings. |
+| **Server** | Can take orders, fire items to the kitchen, process payments, and view a summary of their own shift. Cannot access other staff reports or apply discounts. |
+| **Cashier** | Can process payments at the counter from an assigned register. Access is limited to the payment and order view — no reporting or settings access. |
+
+## Adding a Staff Member
+
+<Steps>
+  <Step title="Open Staff settings">
+    Go to **Settings > Staff**.
+  </Step>
+  <Step title="Add a new member">
+    Tap **+ Add Staff Member**.
+  </Step>
+  <Step title="Enter their details">
+    Enter the staff member's name and select their role from the dropdown.
+  </Step>
+  <Step title="Set a PIN">
+    Assign a unique 4-digit PIN. The staff member will use this PIN to log in on any POS terminal.
+  </Step>
+  <Step title="Save">
+    Tap **Save**. The account is immediately active.
+  </Step>
+</Steps>
+
+<Tip>
+Choose PINs that are easy for each staff member to remember but avoid obvious sequences like 1234 or 0000. Each PIN must be unique across all staff accounts.
+</Tip>
+
+## Editing a Staff Member
+
+To update a staff member's name, role, or PIN, go to **Settings > Staff** and tap their name. Make your changes on the edit screen and tap **Save**. Role changes take effect immediately — the staff member will see the updated permissions on their next login.
+
+## Deactivating a Staff Member
+
+When a team member leaves, deactivate their account rather than deleting it. This removes their ability to log in while preserving all of their historical order and payment data in your reports.
+
+To deactivate an account, tap the staff member's name in **Settings > Staff** and toggle the **Active** switch to off. Tap **Save** to confirm. Their name will move to the Inactive section of the staff list and their PIN will no longer work at the login screen.
+
+<Note>
+Deactivated staff accounts are never permanently deleted. If a team member returns, simply reactivate their account and update their PIN.
+</Note>
+
+## PIN Login
+
+The POS lock screen is the starting point for every shift. When a terminal is idle, it displays the staff roster with each active team member's name.
+
+To log in:
+1. Tap your name on the lock screen.
+2. Enter your 4-digit PIN on the keypad.
+3. The POS opens to your role's default view.
+
+If the timeclock feature is enabled in your settings, servers and cashiers are automatically clocked in the moment they log in — no separate clock-in step required. Managers and Owners are not automatically clocked in.
+
+<Warning>
+Never share your PIN with other staff members. Each login is tied to individual activity tracking and shift reporting. Shared PINs make it impossible to attribute voids, discounts, or comps to the correct person.
+</Warning>
+
+## Permission Reference
+
+Use the table below to confirm which actions each role can perform before assigning roles to your team.
+
+| Permission | Owner | Manager | Server | Cashier |
+|---|---|---|---|---|
+| Take orders | ✓ | ✓ | ✓ | ✓ |
+| Process payments | ✓ | ✓ | ✓ | ✓ |
+| Apply discounts | ✓ | ✓ | — | — |
+| Void orders | ✓ | ✓ | — | — |
+| Comp items | ✓ | ✓ | — | — |
+| Edit menu | ✓ | ✓ | — | — |
+| View all reports | ✓ | ✓ | — | — |
+| Manage staff | ✓ | ✓ | — | — |
+| Access settings | ✓ | ✓ | — | — |

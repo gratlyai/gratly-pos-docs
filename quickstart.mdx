@@ -1,47 +1,52 @@
 ---
-title: "Quickstart"
-description: "Begin with a guide on the fastest path to a successful outcome"
+title: "Get Started with Gratly POS in Under 30 Minutes"
+sidebarTitle: "Quick Start"
+description: "Learn how to set up your Gratly POS account, add your first menu items, and take your first order — a step-by-step guide for new restaurants."
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
-
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
-
-## Prerequisites
-
-Before you begin, you must have:
-
-- Requirement one (for example, Node.js 18+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
-
-## Get started
+This guide walks you through everything you need to go from a brand-new Gratly account to taking your first live order. By the end, you'll have your restaurant profile configured, your menu populated, your floor plan mapped, and your staff ready to serve — all in under 30 minutes.
 
 <Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
-
-    ```bash
-    npm install your-package
-    ```
+  <Step title="Create Your Account">
+    Navigate to [app.gratly.com](https://app.gratly.com) and click **Sign Up**. Enter your restaurant name, email address, and a secure password, then click **Create Account**. Check your inbox for a verification email and click the confirmation link to activate your account.
   </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
 
-    ```bash
-    your-cli init
-    ```
+  <Step title="Complete Your Restaurant Profile">
+    After signing in, you'll be prompted to finish your profile. Enter your restaurant's address, cuisine type, and service hours. Optionally upload a logo — it appears on all printed receipts and customer-facing screens. Click **Save Profile** when you're done.
   </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
 
-    ```bash
-    your-cli start
-    ```
+  <Step title="Add Your Menu">
+    Navigate to **Menu > Categories** and create at least one category (for example, "Mains"). Then open that category and tap **Add Item** to create your first menu item — give it a name, price, and any modifiers you need. Repeat for each category and item. See the [Menu guide](/menu/overview) for full details on modifiers, pricing rules, and item availability.
+  </Step>
+
+  <Step title="Set Up Your Floor Plan">
+    Go to **Settings > Floor Plan** and tap **Add Table**. Give each table a label (e.g., "Table 1" or "Patio 3"), then drag tables on the canvas to match your physical layout. You can create separate sections — such as "Dining Room" and "Bar" — to keep things organized.
+  </Step>
+
+  <Step title="Add a Staff Member">
+    Go to **Settings > Staff** and click **Add Staff Member**. Enter the team member's name, email, and assign their role — Owner, Manager, Server, or Cashier. They'll receive an invitation email to set their own password. Repeat for every team member who needs access.
+  </Step>
+
+  <Step title="Take Your First Order">
+    From the POS home screen, tap any table on your floor plan to open an order. Browse your menu categories, tap items to add them, and make any modifier selections when prompted. When you're ready, tap **Send to Kitchen**. The order immediately appears on the Kitchen Display System (KDS) for your kitchen staff to action.
   </Step>
 </Steps>
 
 <Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
-
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
+  Before your first service, make sure your receipt printer, kitchen ticket printer, and KDS screen are connected and tested. Follow the [Hardware Setup guide](/hardware-setup) to get every device configured correctly.
 </Tip>
+
+<CardGroup cols={2}>
+  <Card title="Menu Overview" icon="utensils" href="/menu/overview">
+    Build your full menu with categories, modifiers, pricing, and item availability settings.
+  </Card>
+  <Card title="Table Management" icon="table" href="/orders/table-management">
+    Learn how to manage covers, move guests, merge tables, and track order status on your floor plan.
+  </Card>
+  <Card title="Accepting Payments" icon="credit-card" href="/payments/accepting-payments">
+    Process cards, cash, and split checks — and close out a tab the right way.
+  </Card>
+  <Card title="Staff Roles" icon="users" href="/settings/staff-roles">
+    Understand what each role can access and how to configure permissions for your team.
+  </Card>
+</CardGroup>

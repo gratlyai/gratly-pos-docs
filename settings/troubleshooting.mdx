@@ -1,0 +1,91 @@
+---
+title: "Troubleshoot Common Gratly POS Issues and Errors"
+sidebarTitle: "Troubleshooting"
+description: "Diagnose and fix common Gratly POS problems — including printer errors, connectivity issues, KDS not receiving orders, and login problems."
+---
+
+Most issues with Gratly POS come down to a few common causes: a device that has lost its network connection, a misconfigured setting, or hardware that needs a quick restart. Work through the relevant section below to get back up and running as quickly as possible. If you've followed the steps and the problem persists, contact the support team at the bottom of this page.
+
+<AccordionGroup>
+  <Accordion title="Printer is not printing">
+    Follow these steps in order to diagnose why your receipt or kitchen printer isn't responding.
+
+    1. **Check network connectivity** — Confirm the printer is connected to the same Wi-Fi network as the POS terminal. A printer on a separate network (or a guest network) will not receive print jobs.
+    2. **Verify the IP address** — Go to **Settings > Printers**, tap the printer, and confirm the IP address shown matches the printer's actual IP address. If the printer's IP has changed (common after a router reboot), update it here.
+    3. **Restart the printer** — Power the printer off, wait 10 seconds, and power it back on. Then go to **Settings > Printers**, tap the printer, and tap **Print Test** to try again.
+    4. **Check the paper roll** — Open the printer cover and confirm the paper roll is loaded correctly with the paper feeding from the bottom. Check for any paper jams or tears near the cutter mechanism.
+
+    <Tip>
+      Assign a static IP address to your printer in your router's DHCP settings to prevent the IP from changing after every reboot.
+    </Tip>
+  </Accordion>
+
+  <Accordion title="KDS is not showing new orders">
+    If your Kitchen Display System screen stops receiving new orders, work through the following checks.
+
+    1. **Confirm the KDS is signed in** — On the KDS screen, verify it shows the correct kitchen station name. If it's showing a sign-in prompt or a different station, sign in again with the correct station credentials.
+    2. **Check internet connectivity on the KDS device** — The KDS requires an active internet connection to receive orders in real time. Open the device's Wi-Fi settings and confirm it's connected to your network.
+    3. **Verify category assignments** — Go to **Settings > Kitchen Stations** on the POS and confirm that the menu categories for the missing items are assigned to this station. Items whose categories are unassigned will not appear on any KDS screen.
+    4. **Restart the Gratly KDS app** — Close the Gratly KDS app completely on the KDS device and reopen it. The app will re-establish its connection and any queued orders will populate automatically.
+
+    <Note>
+      Orders fired while the KDS was offline are not lost. Once the KDS reconnects, check **Orders > Order History** on the POS to identify and re-send any orders the kitchen may have missed.
+    </Note>
+  </Accordion>
+
+  <Accordion title="Staff member can't log in">
+    If a staff member is unable to log in at the POS lock screen, check the following.
+
+    1. **Confirm the account is active** — Go to **Settings > Staff** and find their name. If their account shows as Inactive, tap their name and toggle the **Active** switch back on, then tap **Save**.
+    2. **Reset their PIN** — If they've forgotten their PIN or are entering it incorrectly, tap their name in **Settings > Staff**, tap **Edit**, and set a new 4-digit PIN. Communicate the new PIN to them directly.
+    3. **Check they're using the right terminal** — Gratly POS uses a single account system across all terminals. Staff members do not need a separate account per terminal — they log in with their PIN on any terminal. If they're trying to create a new account on a new device, redirect them to the lock screen PIN entry instead.
+
+    <Warning>
+      If you reset a staff member's PIN, do it in person or through a secure channel. Never share PINs in group messages or printed notes left on the terminal.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="Order sent but kitchen didn't receive it">
+    If the kitchen reports that an order or item never arrived, follow these steps to locate and re-send it.
+
+    1. **Check whether the kitchen printer or KDS is online** — Verify the printer has paper, is powered on, and is connected to the network. For KDS, confirm the screen is active and signed in to the correct station.
+    2. **Find the order in Order History** — Go to **Orders > Order History** on the POS and locate the affected order. Tap the order to open it, then tap **Re-send to Kitchen**. The full ticket will be re-sent to all assigned printers and KDS stations.
+    3. **Verify kitchen station assignments** — Go to **Settings > Kitchen Stations** and confirm that the categories for those menu items are assigned to the correct station. If a category is unassigned, add it to the appropriate station so future orders route correctly.
+  </Accordion>
+
+  <Accordion title="Payment declined">
+    A declined payment can be caused by the customer's card, the card reader's connection, or a temporary issue with the payment processor.
+
+    1. **Try a different payment method** — Politely ask the customer to try a different card, use a chip instead of tap (or vice versa), or pay with cash. This quickly determines whether the issue is with the specific card or the reader itself.
+    2. **Check the card reader connection** — Go to **Settings > Payments > Card Reader Status**. If the status shows **Disconnected**, the reader has lost its pairing with the POS.
+    3. **Restart the card reader** — If the reader shows as disconnected, power it off and back on. Once it restarts, the POS will automatically re-establish the connection. Attempt the payment again.
+
+    <Note>
+      If multiple customers experience declined payments in a row, check the Gratly status page or contact support — there may be a temporary payment processor outage.
+    </Note>
+  </Accordion>
+
+  <Accordion title="POS is offline / no internet">
+    Gratly POS is designed to keep your restaurant running even when your internet connection drops.
+
+    - **Offline mode is automatic** — When the POS detects that it has lost internet connectivity, it switches to offline mode immediately. You can continue to take orders, fire items to local kitchen printers, and process cash payments without interruption.
+    - **Data syncs automatically when connectivity returns** — All orders, payments, and changes made during the offline period are queued locally and pushed to the cloud as soon as the connection is restored. No manual sync is needed.
+    - **Check your network hardware** — Restart your router and Wi-Fi access point. If other devices on the network also have no internet access, the issue is with your internet service provider rather than the POS. Contact your ISP or use a mobile hotspot as a temporary backup.
+
+    <Warning>
+      Card payments (credit/debit) require an internet connection and are not available in offline mode. During an outage, accept cash payments or ask customers to return once connectivity is restored. Gratly does not support offline card authorization.
+    </Warning>
+
+    If your network is working but the POS still shows as offline, force-quit and reopen the Gratly POS app. If the issue persists after the app restarts, contact support.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+<Card
+  title="Contact Support"
+  icon="envelope"
+  href="mailto:support@gratly.com"
+>
+  Can't find what you need? Our support team is ready to help.
+</Card>

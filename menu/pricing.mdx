@@ -1,0 +1,56 @@
+---
+title: "Configure Menu Pricing, Happy Hour, and Overrides"
+sidebarTitle: "Pricing"
+description: "Set base prices, create happy hour schedules, and configure price overrides for specific times or service types in Gratly POS."
+---
+
+Gratly POS gives you layered control over how your menu is priced. You start with a base price on every item, then stack rules on top for happy hour windows, service types like dine-in versus takeout, and one-off manager overrides at the point of sale. Every pricing change — scheduled or manual — is logged so you always have a full audit trail.
+
+## Base Price
+
+Every item in Gratly has a base price — the standard amount charged when no other pricing rule applies. You set the base price when you create an item, and you can update it at any time from the item's detail screen under **Menu > Categories**.
+
+The base price is the fallback that Gratly uses whenever no active pricing rule matches the current time, day, or service type.
+
+## Happy Hour / Time-Based Pricing
+
+Use pricing rules to automatically reduce prices during specific time windows — happy hour, lunch specials, late-night deals, or any recurring promotion.
+
+<Steps>
+  <Step title="Open Pricing Rules">
+    From the Gratly dashboard, go to **Menu > Pricing Rules**.
+  </Step>
+  <Step title="Create a new rule">
+    Tap **+ New Rule**.
+  </Step>
+  <Step title="Select items or categories">
+    Choose which items or entire categories the rule should apply to. You can mix and match — for example, select the **Drinks** category plus a few specific appetizers.
+  </Step>
+  <Step title="Set the schedule">
+    Choose the days of the week this rule is active (e.g., Monday–Friday) and set the start and end times (e.g., 3:00 PM – 6:00 PM).
+  </Step>
+  <Step title="Enter the discounted price or percentage">
+    Set the promotional price either as a **fixed amount** (e.g., all selected drinks = $5.00) or a **percentage discount** (e.g., 20% off all selected items).
+  </Step>
+  <Step title="Save">
+    Tap **Save**. Gratly automatically switches to the promotional prices when the scheduled window opens and reverts to base prices when it closes — no manual action needed during service.
+  </Step>
+</Steps>
+
+## Service Type Pricing
+
+Gratly lets you set different prices for **Dine-In** and **Takeout** orders. This is useful when your takeout operation carries a small surcharge to cover packaging costs, or when your dine-in menu commands a different price point than your online or counter service.
+
+To configure service type pricing, open **Menu > Pricing Rules**, create a new rule, and under **Applies To**, select either **Dine-In** or **Takeout** as the service type. Enter the adjusted price or percentage for the selected items, then tap **Save**.
+
+When a server starts a new order, Gratly checks the order type and applies the correct price automatically. The service type is displayed on the POS screen so staff can confirm it before adding items.
+
+## Manual Price Override at POS
+
+Managers can override the price of any item directly on the POS terminal at the time of ordering — useful for one-off accommodations, VIP pricing, or correcting a pricing discrepancy on the fly.
+
+To override a price, tap the item on the active order, then tap **Override Price**. Gratly prompts the manager to enter their PIN to authorize the change. Once confirmed, enter the new price for that line item. The override applies only to this order and does not change the item's base price or any pricing rules.
+
+<Note>
+  Every manual price override is recorded in the **Audit Report** under **Reports > Audit Log**, along with the manager who authorized it, the original price, the overridden price, and the timestamp. Review this report regularly to monitor pricing adjustments and maintain accountability across your team.
+</Note>

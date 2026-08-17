@@ -1,0 +1,109 @@
+---
+title: "Accept Payments at Your Restaurant with Gratly POS"
+sidebarTitle: "Accepting Payments"
+description: "Process cash, credit card, and contactless payments in Gratly POS. Learn how to charge an order, split payment methods, and handle partial payments."
+---
+
+When a guest is ready to pay, Gratly POS guides you through collecting payment quickly and accurately — whether they're paying cash, tapping a card, or splitting the bill across multiple methods. Every transaction is recorded automatically so your end-of-day reports stay complete without extra work.
+
+## Opening the Payment Screen
+
+<Steps>
+  <Step title="Open the order">
+    From the table layout or order list, tap the order you want to close out.
+  </Step>
+  <Step title="Tap Charge">
+    Tap the **Charge** button at the bottom of the order screen.
+  </Step>
+  <Step title="Review the total due">
+    The payment screen opens and displays the full balance owed, including taxes and any applied discounts.
+  </Step>
+</Steps>
+
+## Payment Methods
+
+<Tabs>
+  <Tab title="Cash">
+    <Steps>
+      <Step title="Select Cash">
+        On the payment screen, tap **Cash**.
+      </Step>
+      <Step title="Enter the amount tendered">
+        Type in the amount the guest is handing you, or tap one of the suggested denomination shortcuts to fill it in automatically.
+      </Step>
+      <Step title="Confirm change due">
+        Gratly calculates and displays the change amount on screen. Collect the cash and return the correct change to the guest.
+      </Step>
+      <Step title="Complete the payment">
+        Tap **Confirm Payment** to close the order and mark it as paid.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Card (Tap / Chip / Swipe)">
+    <Steps>
+      <Step title="Select Card">
+        On the payment screen, tap **Card**. The connected card reader activates and prompts the customer to present their card.
+      </Step>
+      <Step title="Customer presents card">
+        The guest taps (contactless), inserts (chip), or swipes (magnetic stripe) their card on the reader.
+      </Step>
+      <Step title="Wait for authorization">
+        Gratly contacts the payment processor. Authorization typically completes within a few seconds. Do not remove the card until the reader signals approval.
+      </Step>
+      <Step title="Finish the transaction">
+        Once approved, tap **Done**. The order closes and a receipt prompt appears.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Split Payment">
+    When a guest wants to pay part of the bill in one method and the remainder in another, use the Split Payment flow.
+
+    <Steps>
+      <Step title="Tap Split Payment">
+        On the payment screen, tap **Split Payment** instead of selecting a single method.
+      </Step>
+      <Step title="Set the first payment amount">
+        Enter the amount the guest wants to apply to the first method (for example, $20.00 on a gift card). Tap the payment method and process it as normal.
+      </Step>
+      <Step title="Process the first method">
+        Complete the transaction for that method — collect cash, authorize the card, or redeem the gift card.
+      </Step>
+      <Step title="Process the remaining balance">
+        Gratly automatically shows the remaining balance. Select the second payment method and process it to zero out the check.
+      </Step>
+    </Steps>
+
+    You can split across as many methods as needed. Gratly tracks each portion separately in transaction reports.
+  </Tab>
+</Tabs>
+
+## Adding a Tip
+
+Gratly supports two tip entry modes depending on when the tip is collected:
+
+- **Pre-tip (card payments):** The card reader prompts the customer to select a tip percentage or enter a custom tip amount *before* they authorize the payment. The tip is included in the authorization total. This is the default for card transactions.
+- **Post-tip (cash or manual entry):** After payment is collected, a server or manager can enter the tip amount manually on the order summary screen. Use this for cash tips you want to record, or for situations where a card tip needs to be adjusted after the fact. Post-tip entry requires a manager PIN if the order has already been closed.
+
+## Refunds
+
+<Steps>
+  <Step title="Navigate to Transactions">
+    Go to **Reports > Transactions** from the main menu.
+  </Step>
+  <Step title="Find the transaction">
+    Search by date, order number, or last four digits of the card to locate the transaction you need to refund.
+  </Step>
+  <Step title="Tap Refund">
+    Open the transaction detail and tap **Refund**.
+  </Step>
+  <Step title="Choose full or partial refund">
+    Select **Full Refund** to return the entire amount, or tap **Partial Refund** and enter the specific dollar amount to return.
+  </Step>
+  <Step title="Confirm with manager PIN">
+    Enter a manager or owner PIN to authorize the refund. The transaction record updates immediately to show the refund status.
+  </Step>
+</Steps>
+
+<Note>
+  Card refunds are returned to the original payment card and may take **3–5 business days** to appear on the customer's statement, depending on their bank. Cash refunds should be issued from the drawer at the time of the refund.
+</Note>

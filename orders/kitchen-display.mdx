@@ -1,0 +1,63 @@
+---
+title: "Use the Kitchen Display System to Manage Tickets"
+sidebarTitle: "Kitchen Display"
+description: "Learn how the Gratly KDS shows incoming orders, tracks ticket status, and helps your kitchen staff fulfill orders accurately and on time."
+---
+
+The Kitchen Display System (KDS) replaces paper tickets with a live, color-coded screen that your kitchen staff can read at a glance. Instead of hunting through a pile of chits, cooks see every incoming order the moment a server sends it — complete with modifiers, seat assignments, and special notes — and can update ticket status in real time without leaving the line.
+
+## How the KDS Works
+
+When a server taps **Send Order** on the POS, the ticket appears on the KDS screen within seconds. Each ticket card displays:
+
+- **Table number** (or "Takeout" for off-floor orders)
+- **Seat assignments** for each item
+- **Item names and quantity**
+- **Modifiers** (e.g., "medium-rare", "no cheese")
+- **Special notes** entered by the server (e.g., "allergy: nuts")
+
+Tickets are ordered by arrival time by default, so the oldest ticket always appears first. Kitchen staff work left to right across the screen to stay in sequence.
+
+## Ticket Status Colors
+
+Every ticket card uses a background color to communicate urgency at a distance:
+
+- **Blue** — New order just received, not yet started
+- **Yellow** — In progress (being prepared)
+- **Green** — Ready (food is up, waiting for the server)
+- **Red** — Overdue (past the target prep time for that category)
+
+The red threshold is set per category in **Settings > Kitchen Stations** so your team gets flagged at the right moment for a quick appetizer versus a slow braise.
+
+## Bumping a Ticket
+
+Tap anywhere on a ticket card to advance it through the workflow:
+
+1. **Blue → Yellow:** Kitchen staff acknowledges the ticket and starts preparation.
+2. **Yellow → Green:** Dish is ready and waiting to be run.
+
+When a ticket turns green, the assigned server receives a notification on the POS screen prompting them to pick up the order. Once the server confirms pickup, the ticket is cleared from the KDS.
+
+## Assigning Stations
+
+Route menu categories to the correct station so each screen only shows relevant tickets. For example:
+
+- **Grill station** → Mains, Starters
+- **Bar station** → Drinks, Desserts
+
+To configure routing, go to **Settings > Kitchen Stations**, tap a station, and select the categories it should receive. Changes take effect immediately for all new tickets.
+
+If an order contains items from multiple stations, Gratly splits the ticket and sends each portion to the appropriate station screen automatically.
+
+## Recalling a Bumped Ticket
+
+If a ticket is bumped by mistake before the food is actually ready, you can bring it back without re-firing from the POS:
+
+1. Tap the **Recall** button at the top of the KDS screen.
+2. A list of recently bumped tickets appears, sorted by time.
+3. Tap the ticket you need to restore.
+4. The ticket reappears on the KDS in its previous status color.
+
+<Note>
+  The KDS works offline. If your internet connection drops, tickets continue to display from the local cache and all status changes are saved on-device. Everything syncs automatically once connectivity is restored — no tickets are lost.
+</Note>

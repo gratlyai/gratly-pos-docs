@@ -1,0 +1,109 @@
+---
+title: "Configure Receipt and Kitchen Printers in Gratly POS"
+sidebarTitle: "Printer Setup"
+description: "Add and configure receipt printers and kitchen ticket printers in Gratly POS. Set up multiple printers, assign them to stations, and print test tickets."
+---
+
+Printing is at the heart of a smooth service — customers expect a clean receipt and the kitchen needs accurate tickets the moment an order is fired. Gratly POS supports both receipt and kitchen ticket printers over Wi-Fi or USB, and lets you assign kitchen printers to specific menu categories so every item routes to the right station automatically.
+
+## Supported Printers
+
+Gratly POS is certified with the following printer models. Using a supported model ensures reliable connectivity and full feature compatibility.
+
+**Receipt Printers**
+- Epson TM-T88V
+- Epson TM-T88VI
+- Star TSP143III
+
+**Kitchen Ticket Printers**
+- Epson TM-U220
+- Star SP742
+
+**Connection Types**
+- **Wi-Fi** (recommended) — enables printing from any terminal on the network
+- **USB** — connects directly to a single terminal; suitable for counter setups with a dedicated receipt station
+
+<Note>
+Wi-Fi is strongly recommended for kitchen printers so that orders can be sent from any terminal on the floor, not just the one physically connected to the printer.
+</Note>
+
+## Adding a Printer
+
+<Steps>
+  <Step title="Open Printer settings">
+    Go to **Settings > Printers**.
+  </Step>
+  <Step title="Add a new printer">
+    Tap **+ Add Printer**.
+  </Step>
+  <Step title="Select the printer type">
+    Choose either **Receipt** or **Kitchen** depending on how this printer will be used.
+  </Step>
+  <Step title="Select the connection type">
+    Choose **Wi-Fi** or **USB**.
+  </Step>
+  <Step title="Enter or select the printer's address">
+    For Wi-Fi, either enter the printer's IP address manually or tap **Scan Network** to detect printers on your local network automatically. For USB, select the printer from the connected devices list.
+  </Step>
+  <Step title="Name the printer">
+    Give the printer a recognizable name (e.g., "Main Bar Printer", "Expo Station", "Front Counter Receipt"). This name appears throughout the POS when selecting or assigning printers.
+  </Step>
+  <Step title="Save">
+    Tap **Save**. The printer is now available across all terminals on the network.
+  </Step>
+</Steps>
+
+<Tip>
+Assign your router a static IP address for each printer to prevent the printer's IP from changing after a reboot. This avoids connectivity issues during service.
+</Tip>
+
+## Assigning a Kitchen Printer to Categories
+
+Each kitchen printer handles a specific station — grill, bar, pastry, expo, and so on. By assigning menu categories to a printer, Gratly POS automatically routes each order item to the correct station without any extra steps from your servers.
+
+For example, you might assign the "Grill" and "Starters" categories to your kitchen printer, and the "Bar" and "Cocktails" categories to a separate bar printer. When a server fires a ticket with both a burger and a cocktail, each item prints at the right station simultaneously.
+
+<Steps>
+  <Step title="Open the kitchen printer">
+    In **Settings > Printers**, tap the name of the kitchen printer you want to configure.
+  </Step>
+  <Step title="Open category assignments">
+    Tap **Assigned Categories**.
+  </Step>
+  <Step title="Select the categories">
+    Toggle on each menu category that should route to this printer.
+  </Step>
+  <Step title="Save">
+    Tap **Save**. The assignments take effect immediately.
+  </Step>
+</Steps>
+
+<Warning>
+If a menu item's category is not assigned to any kitchen printer or KDS station, that item will not print when an order is fired. Always verify category assignments when you add a new category to your menu.
+</Warning>
+
+## Printing a Test Receipt
+
+After adding a printer, confirm it's working before service begins.
+
+<Steps>
+  <Step title="Open the printer detail screen">
+    In **Settings > Printers**, tap the printer you want to test.
+  </Step>
+  <Step title="Print a test receipt">
+    Tap **Print Test**.
+  </Step>
+  <Step title="Confirm the printout">
+    A test receipt prints with the Gratly logo and printer name. If nothing prints, check the troubleshooting steps below.
+  </Step>
+</Steps>
+
+If the test print fails, verify that the printer is powered on, connected to the same Wi-Fi network as the POS terminal, and that the IP address in Settings matches the printer's actual IP. See the [Troubleshooting](/settings/troubleshooting) guide for a full printer diagnostic checklist.
+
+## Multiple Printers
+
+<Note>
+You can add as many printers as your operation requires. Each POS terminal can be assigned its own dedicated receipt printer — useful when you have separate stations for dine-in and takeout. Multiple kitchen printers can also be active at the same time, each serving a different station, all receiving print jobs simultaneously when an order is fired.
+</Note>
+
+To set a default receipt printer for a specific terminal, go to **Settings > Printers** on that terminal and tap **Set as Default** next to the printer you want to use. Each terminal saves its own default receipt printer independently.
